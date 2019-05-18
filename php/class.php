@@ -1,5 +1,7 @@
 <?php
 
+namespace testClass\Lib;
+
 class User {
   // property
   private $name;
