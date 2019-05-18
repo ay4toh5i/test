@@ -3,10 +3,16 @@
 class User {
   // property
   private $name;
+  private static $count = 0;
 
   // constructor
   public function __construct(string $name) {
     $this->name = $name;
+    self::$count++;
+  }
+
+  public static function numObject(): int {
+    return self::$count;
   }
   
   // method
@@ -17,3 +23,8 @@ class User {
 
 $tom = new User("Tom");
 $tom->sayHi();
+
+$bob = new User("Bob");
+$bob->sayHi();
+
+echo User::numObject()." users exist"."\n";
