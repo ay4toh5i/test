@@ -30,6 +30,11 @@ pp a[1..5]
 
 # show methods that the class includes
 # pp String.methods
+# 継承したメソッドを含めない
+# pp String.methods(false)
+# etc..
+# pp String.instance_methods
+# pp String.public_methods
 
 # &. can call methods safe
 pp nil&.upcase!
