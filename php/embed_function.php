@@ -23,3 +23,10 @@ $colors = ["red", "blue", "yellow"];
 echo count($colors)."\n";
 echo implode("@", $colors)."\n";
 
+$intNum = 1;
+$floatNum = .5;
+$string = 'abcdefg';
+
+echo is_int($intNum)."\n";
+echo is_float($floatNum)."\n";
+echo is_string($string)."\n";
