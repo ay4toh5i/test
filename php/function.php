@@ -8,7 +8,7 @@ function makeGreetingSentence(string $name = "anonymous"):string {
 echo makeGreetingSentence("sakamoto")."\n";
 echo makeGreetingSentence()."\n";
 
-function test($object) {
+function test($object = null) {
   return $object;
 }
 
@@ -27,3 +27,5 @@ function test2(?int $number) {
 
 echo test2(null);
 var_dump(test2(null));
+echo "----"."\n";
+echo test();
